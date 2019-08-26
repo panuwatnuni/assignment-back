@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.all('/getDB', stamper, line.getDB)
 app.all('/setDB', stamper, line.setDB)
 app.post('/sendLine', stamper, line.sendLine)
-app.get('/bundan',stamper, bundan.index)
+app.get('/findRestaurant',stamper, bundan.findRestaurant)
 app.get('/findXYZ',stamper, bundan.findXYZ)
 
 // catch 404 and forward to error handler

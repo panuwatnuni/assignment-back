@@ -1,7 +1,7 @@
 const utl = require("../utl.js")
 const memoize = require("memoizee");
 
-async function index (req, res) {
+async function findRestaurant (req, res) {
 	let APIKEY = 'AIzaSyAcqST5W9qpXlwUfvJAB5aoH4-EJTfwRzE'
 	newListRest = [],
 	resResult = {},
@@ -48,7 +48,7 @@ function findXYZ (req, res) {
 		});
 		res.send(result)
 }
-memoized = memoize(index, { maxAge: 60 * 1000 })
+memoized = memoize(findRestaurant, { maxAge: 60 * 1000 })
 memoized2 = memoize(findXYZ, { maxAge:  60 * 1000 })
-exports.index = index
+exports.findRestaurant = findRestaurant
 exports.findXYZ = findXYZ
