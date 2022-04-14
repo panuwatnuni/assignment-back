@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^3.2.2",
     "async-mysql": "^1.0.1",
     "bluebird": "^3.5.1",
     "body-parser": "~1.13.2",
